@@ -9,3 +9,4 @@ lint:
 	@echo "Linting the code..."
 	poetry run ruff format --check
 	poetry run ruff check --no-fix --show-fixes
+	poetry run mypy .
