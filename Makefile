@@ -10,3 +10,8 @@ lint:
 	poetry run ruff format --check
 	poetry run ruff check --no-fix --show-fixes
 	poetry run mypy .
+
+# For MacOS we need to install portaudio before installing the realtimetts package
+.PHONY: install-portaudio
+install-portaudio:
+	brew install portaudio
